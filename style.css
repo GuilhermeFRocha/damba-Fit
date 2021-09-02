@@ -1,0 +1,640 @@
+body {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+main {
+  position: relative;
+  z-index: 2;
+}
+
+header {
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  background: rgb(68, 103, 39);
+  background: linear-gradient(
+    0deg,
+    rgba(68, 103, 39, 0) 0%,
+    rgba(68, 103, 39, 1) 100%
+  );
+  z-index: 1;
+  max-width: 1500px;
+}
+
+header .container-header {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 20px;
+  z-index: 100;
+}
+
+header .container-header .icons {
+  display: flex;
+  align-items: center;
+}
+
+header .container-header .icons button {
+  border-radius: 40px 40px 40px 40px;
+  width: 170px;
+  height: 39px;
+  background: #56a712;
+  color: white;
+  margin-left: 20px;
+  font-family: "Campton";
+  cursor: pointer;
+}
+
+.container-header .icons button {
+  font-size: 14px;
+  font-family: "Campton";
+}
+
+header .container-header .icons img {
+  padding: 3px;
+}
+
+section.banner {
+  margin: 0 auto;
+  width: 100%;
+  background-image: url(../img/damha_fit_layout_banner_principal2.png);
+  background-size: cover;
+}
+
+section.banner .container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  background: url(../img/3875116caee3f8e7a7d06fc3d9d9b1ce.png) no-repeat bottom
+    left;
+  background-size: contain;
+}
+
+section.banner .container img {
+  width: 650px;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+
+section.banner .container .banner-title {
+  margin-left: auto;
+  width: 51%;
+  text-align: center;
+  color: aliceblue;
+  padding: 200px 0;
+}
+
+section.banner .container .banner-title h3 {
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Campton";
+}
+
+section.banner .container .banner-title h1 {
+  font-family: "Campton";
+  font-size: 48px;
+}
+
+.container-desc {
+  width: 100%;
+  margin: 0 auto;
+  background: url(../img/damha_fit_layout_banner_descrição.png) no-repeat;
+  background-size: cover;
+  background-repeat: round;
+}
+
+.container-desc .description {
+  width: 80%;
+  margin: 0 auto;
+  text-align: right;
+  padding: 140px;
+}
+
+.container-desc .description p {
+  color: rgb(13, 119, 13);
+  font-family: "Camptonitalic";
+  padding: 60px 0;
+  font-size: 24px;
+}
+
+.container-desc .description h8 {
+  color: rgb(1, 107, 1);
+  font-family: "Campton";
+  font-size: 48px;
+}
+
+.container-photo {
+  border-bottom: 13px solid;
+  width: 100%;
+  border-top: 13px solid;
+  border-image-source: linear-gradient(to left, rgb(86 167 18), rgb(68 103 39));
+  border-image-slice: 1;
+}
+
+.content-photo {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.content-photo img {
+  width: 100%;
+  overflow-x: auto;
+  position: relative;
+  margin-bottom: -5px;
+}
+
+.container-photo .content-photo .hover-area:hover {
+  background: #1a620a;
+  filter: contrast(2);
+  position: relative;
+}
+
+.container-photo .content-photo .hover-area img:hover {
+  filter: opacity(0.3);
+}
+
+.container-photo .content-photo .hover-area:hover::after {
+  content: "Área de lazer";
+  color: rgb(255, 255, 255);
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  display: block;
+  top: 43%;
+  left: 0;
+  right: 0;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.container-topics {
+  overflow: hidden;
+  align-items: center;
+  margin-bottom: -5px;
+  background: #fff;
+  grid-template-columns: 3fr 2fr;
+  display: grid;
+}
+
+.container-topics .topics {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.container-topics .topics .sub {
+  transform: rotate(270deg);
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.container-topics .topics .sub h2 {
+  font-size: 90px;
+  color: rgb(68 103 39/ 15%);
+  padding-left: 20px;
+  position: absolute;
+  bottom: 40px;
+  width: 560px;
+  font-family: "Campton";
+  border-bottom: 1px solid rgb(68 103 39/ 15%);
+  right: 1px;
+  text-align: right;
+}
+.container-topics .topics .icons-topics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 45px 40px;
+  text-align: center;
+  padding: 60px;
+}
+
+.container-topics .topics img {
+  width: 45px;
+  height: 45px;
+}
+
+.container-topics .topics p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #446727;
+}
+
+.container-topics .topics .icons-topics .icon {
+  display: flex;
+  gap: 60px;
+  padding: 30px;
+}
+
+.container-topics .topics .icons-topics .icon div {
+  text-align: center;
+  width: 22%;
+}
+
+.container-topics .topics .icons-topics .icon p {
+  text-align: center;
+  font-size: 12px;
+  color: #446727;
+  font-weight: bold;
+  font-family: "Campton";
+}
+
+.container-topics div img {
+  width: 100%;
+}
+
+.container-info {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  background: rgb(54, 135, 51);
+  background: rgb(52, 103, 12);
+  background: linear-gradient(
+    38deg,
+    rgba(52, 103, 12, 1) 0%,
+    rgba(68, 134, 16, 1) 55%,
+    rgba(111, 213, 31, 1) 100%
+  );
+  justify-content: space-between;
+  position: relative;
+}
+
+.container-info .content-info {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  padding: 50px 0 100px 0;
+}
+
+.container-info .content-info .info {
+  width: 100%;
+}
+
+.container-info .content-info .info .title-info {
+  display: block;
+}
+
+.container-info .content-info .info div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-info .content-info .info h2 {
+  font-size: 96px;
+  color: white;
+  font-family: "RealityLight";
+  padding: 18px 0 0 0;
+  letter-spacing: 5px;
+}
+
+.container-info .content-info .info h7 {
+  font-size: 36px;
+  color: white;
+  font-family: "Campton";
+  position: absolute;
+  padding: 0px 0px 0px 70px;
+}
+
+.container-info .content-info .info p {
+  font-size: 16px;
+  padding: 10px 0px;
+  color: #c8b539;
+  font-family: "Campton";
+}
+
+.container-info .line {
+  height: 1px;
+  background: white;
+  width: 29%;
+  position: absolute;
+  margin-top: 92px;
+}
+
+.container-info .img-plan {
+  width: 218%;
+}
+
+.container-info .img-plan img {
+  width: 100%;
+  background-size: cover;
+  margin-right: auto;
+}
+
+.container-modal {
+  margin: 0 auto;
+  width: 65%;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  border: 0px solid #808080;
+  margin-top: -88px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: grid;
+  box-shadow: 0px 2px 2px rgb(187 204 221 / 40%);
+  grid-template-columns: 1fr 2fr;
+}
+
+.container-modal .sub-title {
+  width: 42%;
+}
+
+.container-modal .sub-title h7 {
+  font-size: 36px;
+  font-family: "Campton";
+  color: #446727;
+  position: absolute;
+  padding-left: 11px;
+}
+
+.container-modal .sub-title h2 {
+  font-size: 96px;
+  font-family: "RealityLight";
+  color: #56a712;
+  padding-top: 22px;
+  letter-spacing: 5px;
+}
+
+.container-modal .registration {
+  position: relative;
+}
+
+.container-modal .registration input {
+  border: 1px solid #446727;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.container-modal .registration input {
+  width: 100%;
+}
+
+.container-modal .registration .content-form {
+  display: flex;
+}
+
+.container-modal .registration .content-form #email {
+  width: 60%;
+}
+
+.container-modal .registration .content-form #number {
+  width: 40%;
+  margin-left: 10px;
+}
+
+main button {
+  padding: 10px;
+  border: 1px solid;
+  background: #56a712;
+  color: #fff;
+  width: 170px;
+  font-size: 14px;
+  font-family: "Campton";
+  border-radius: 5px;
+  right: 0px;
+  top: 136px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.container-map {
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container-map img {
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  background: rgb(86, 167, 18);
+  background: linear-gradient(
+    180deg,
+    rgba(86, 167, 18, 1) 0%,
+    rgba(68, 103, 39, 1) 100%
+  );
+}
+
+.container-footer {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 55px 0;
+  text-align: right;
+}
+
+.content-footer p {
+  font-size: 14px;
+  color: #fff;
+  font-family: "Campton";
+}
+
+.content-footer img {
+  padding-left: 5px;
+}
+
+.content-address {
+  display: flex;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.content-number {
+  display: block;
+  gap: 15px;
+}
+.content-address p {
+  font-size: 14px;
+}
+
+.list-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start !important;
+}
+
+.complementar-map {
+  width: 60%;
+}
+
+/* Fontes */
+@font-face {
+  font-family: "Campton";
+  src: local(Campton), url(../Fonts/CamptonBook.otf);
+}
+
+@font-face {
+  font-family: "Camptonitalic";
+  src: local(Camptonitalic), url(../Fonts/CamptonBookItalic.otf);
+}
+
+@font-face {
+  font-family: "Reality";
+  src: local(Reality), url(../Fonts/Reality\ Sunday.ttf);
+}
+
+@font-face {
+  font-family: "RealityLight";
+  src: local(RealityLight), url(../Fonts/Reality\ Sunday\ light.ttf);
+}
+
+/* MediaQuare */
+
+@media (max-width: 1400px) {
+  section.banner .container {
+    background: none;
+  }
+
+  section.banner .container .banner-title {
+    margin: 0 auto;
+  }
+
+  .container-topics .topics .sub {
+    display: none;
+  }
+
+  .container-topics .topics {
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-modal {
+    display: block;
+  }
+
+  .container-modal .sub-title {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .container-modal .sub-title h2 {
+    padding: 0;
+    font-size: 50px;
+  }
+
+  .container-modal .sub-title h7 {
+    display: none;
+  }
+
+  main button {
+    top: 120px;
+  }
+
+  .icons svg {
+    display: none;
+  }
+  .container-info .line {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container-header .icons {
+    display: none;
+  }
+
+  .container-map img {
+    width: 150%;
+  }
+
+  .complementar-map {
+    display: none;
+  }
+}
+
+@media (max-width: 599px) {
+  header {
+    position: absolute;
+    background: transparent;
+  }
+
+  .container-desc .description {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .container-desc .description p {
+    padding-top: 0;
+  }
+
+  .topics-banner {
+    display: none;
+  }
+
+  .container-topics {
+    display: block;
+  }
+
+  .container-info .content-info .info h7 {
+    font-size: 25px;
+  }
+
+  .container-info .content-info .info h2 {
+    font-size: 60px;
+  }
+
+  .container-footer {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    display: block;
+  }
+
+  .content-footer {
+    padding: 20px;
+  }
+
+  .content-address {
+    justify-content: center;
+  }
+
+  section.banner .container .banner-title {
+    width: 100%;
+    padding-top: 150px 0;
+  }
+
+  section.banner .container .banner-title h1 {
+    font-size: 33px;
+    margin-top: 30px;
+  }
+  .container-map img {
+    display: none;
+  }
+  .container-modal .sub-title h2 {
+    font-size: 20px;
+  }
+
+  .container-modal {
+    margin-top: 0;
+    position: relative;
+  }
+
+  main button {
+    position: initial;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .container-modal .registration .content-form {
+    display: block;
+  }
+
+  .container-modal .registration .content-form #number {
+    margin-left: 0px;
+  }
+}
